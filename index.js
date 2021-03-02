@@ -25,6 +25,9 @@ player.load(tourURL, () => {
     });
     player.setEventListener('label2linkclicked', (event)=> {
         console.log(event)
-        player.moveToPanorama(player.tour.panoramas[6], 'teleport');
+        window.open('http://google.com','_blank');
+    })
+    player.setEventListener('labelclicked', (event)=> {
+        console.log(event)
     })
 });
